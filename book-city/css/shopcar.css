@@ -1,0 +1,83 @@
+.shopcar h2{
+	text-align: center;
+	margin:85px 0 12px;
+	font-size:36px;
+	min-width: 1300px; 
+}
+.shopcar h3{
+	text-align: center;
+	margin-top: 40px;
+	font-size: 26px;
+	margin-bottom: 260px;
+}
+.shopcar .list{
+	width: 1262px;
+	min-height: 260px;
+	border:5px solid #efeae5;
+	padding: 14px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.list .nav{
+	width: 1262px;
+}
+.list .nav span{
+	border-top:1px solid lightgray;
+	border-left:1px solid lightgray;
+	border-bottom:1px solid lightgray;
+	text-align: center;
+	display: block;
+	height: 20px;
+	line-height: 22px;
+	float: left; 
+}
+.list .nav .book{
+	width: 488px;
+}
+.list .nav .bookname{
+	width: 208px; 
+}
+.list .nav .nav_price,.list .nav .nav_pay,.list .nav .num{
+	width: 140px;
+}
+.list .nav .nav_del{
+	border:1px solid lightgray;
+	width: 139px;
+}
+.list .nav .nav_pay,.list .nav .nav_del,.list li .pay,.list li .del{
+	cursor: pointer;
+}
+.list li span img{
+	height: 100px;
+}
+.list li span{
+	border-left:1px solid lightgray;
+	border-bottom:1px solid lightgray;
+	text-align: center;
+	display: block;
+	height: 100px;
+	line-height: 100px;
+	float: left;
+}
+.list li .book{
+	width: 488px;
+}
+.list li .bookname{
+	width: 208px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.list li .price,.list li .pay,.list li .num{
+	width: 140px;
+}
+.list li .num input{
+	width: 30px;
+	text-align: center;
+	outline: none;
+} 
+.list li .del{
+	border:1px solid lightgray;
+	border-top:0 solid;
+	width: 139px;
+}

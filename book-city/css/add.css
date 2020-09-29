@@ -1,0 +1,43 @@
+.add{
+	height: 640px;
+}
+.add h2{
+	text-align: center;
+	margin:60px 0 27px;
+	font-size:36px;
+	min-width: 710px;  
+}
+.add .form{
+	width:710px;
+	margin:0 auto;
+	overflow: hidden; 
+}
+.form_left{
+	width: 80px;
+	float: left;
+}
+.form_left p{
+	text-align:right;
+	height:33px;
+	line-height: 33px;
+	margin-bottom: 15px; 
+	font-family: 'Microsoft YaHei';	
+}
+.form form{
+	width:610px;
+	float: right;
+}
+.form [type="text"]{
+	width:596px;
+	height: 29px;
+	padding-left: 10px;
+}
+.form input{
+	display:block;
+	margin-bottom: 15px;
+	outline: none;
+
+}
+.form [type="file"]{
+	margin-top: 22px;
+}

@@ -1,0 +1,25 @@
+.cosline {
+  height: 1px;
+  background: #b2b1b1; }
+
+.footer {
+  width: 534px;
+  margin: 46px auto 0;
+  overflow: hidden; }
+  .footer ul {
+    float: left;
+    margin: 0 61px; }
+    .footer ul .first {
+      margin-bottom: 14px; }
+      .footer ul .first a {
+        color: #b0b0b0; }
+    .footer ul li {
+      margin-bottom: 9px; }
+      .footer ul li a {
+        color: #666666;
+        font-size: 14px; }
+  .footer a:hover {
+    color: red; }
+
+a:hover {
+  color: red; }

@@ -1,0 +1,937 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+a{text-decoration: none;}
+.move ul,.move ul li{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.box{
+	width: 100%;
+	height: 490px;
+	position:relative;
+}
+.box >img{
+	width: 100%; 
+	min-width: 1456px;
+	height: 490px;
+}
+/*// 页眉第一栏*/
+header{
+	position: absolute;
+	padding: 10px 0px;
+	height: 60px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+header div{
+	float: left;
+}
+header .logo{
+	margin: 10px 20px;
+	height: 40px;
+	width: 140px;
+	cursor: pointer;
+	background: url(images/logo.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+@media screen and (max-width: 980px){
+	header .logo{
+		width: 120px;
+		margin-left: 10px;
+	}
+}
+header .left{
+	height: 60px;
+	line-height: 60px;
+}
+header .left a{
+	color: black;
+	font-size: 16px;
+	margin:0px 18px; 
+}
+@media screen and (max-width: 767px) {
+	header .left{
+		display: none;
+	}
+}
+header nav{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 60px;
+}
+header nav div{
+	float: left;
+	height: 40px;
+	padding:10px 0px;
+}
+.right1{
+	height: 39px;
+	border-bottom: 1px solid gray;
+}
+.right1 input{
+	width: 210px;
+	height: 60px;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+@media screen and (max-width:1200px ) {
+	.right1 input{
+		width: 170px;
+	}
+	header nav{
+		left: 790px;
+	}
+}
+.right1 div{
+	float: right;
+	padding: 0px;
+	width: 16px;
+	height: 16px;
+	margin:22px 0px 21px 14px;
+	background:transparent url(images/sous.png) no-repeat;
+	background-size: 100% 100%; 
+	cursor: pointer;
+}
+.right1 div:hover{
+	background:url(images/sousred.jpg);
+}
+.right2{
+	margin:10px 20px;
+	height:40px;
+	line-height: 40px;  
+}
+.right2 div{
+	width: 13px;
+	padding: 0px;
+	height: 19px;
+	margin: 0px 23px;
+	background:transparent url(images/shouj.png);
+	background-size: 100% 100%;
+	cursor: pointer;
+	position: relative;
+	top: 10px;
+}
+.right2 .code{
+	position: absolute;
+	width: 180px;
+	height: 200px;
+	background: url(images/code.png);
+	background-size: 100% 100%;
+	left:50%;
+	top: 52px;
+	margin-left:-90px; 
+	z-index: 20;
+	clear: both;
+	display: none;
+}
+.code div{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	transform:rotateZ(45deg);
+	top: -10px;
+	left:50%;
+	margin-left: -10px;
+	background-color: white;
+	background-image: none;
+}
+.right2 >div:hover{
+	background:url(images/shoujred.jpg);
+}
+.right2 div:hover div{
+	display: block;
+}
+.right2 a{
+	font-size: 14px;
+	margin: 0px 16px;
+	color: gray;
+	clear: both;
+}
+header a:hover{
+	color: red;
+}
+/*// juzhong 图片轮播*/
+.move{
+	width: 1200px;
+	height: 460px;
+	margin: -412px auto 0px;
+	position: relative;
+	background: red;
+}
+.move img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+}
+.move .img1 img{
+	opacity: 1;
+}
+.move nav{
+	width:245px;
+	height: 448px;
+	background: rgba(0,0,0,.2);
+	position:absolute;
+	left: 0px;
+	top: 0px; 
+	padding: 6px 0px;
+}
+nav .mouse{
+	width: 245px;
+	height: 64px;
+	color: white;
+	font-size: 16px;
+	text-indent: 32px;
+	line-height: 64px;
+	cursor: pointer;
+}
+.baixian{
+	width: 195px;
+	height: 1px;
+	background: rgba(255,255,255,.5);
+	display:block;
+	margin-left: 25px; 
+	margin-top:-1px; 
+}
+.jiantouright{
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	transform:rotate(45deg);
+	float: right;
+	margin-right: 38px;
+	margin-top: 30px; 
+}
+.mouse >div{
+	position: absolute;
+	width:730px;
+	height: 458px;
+	background-size: 100% 100%;
+	border: 1px solid lightgray;
+	top: 0px;
+	left: 245px;
+	display: none;
+	z-index: 20;
+}
+.over1 >div{
+	background: url(images/over1.png);
+}
+.over2 >div{
+	background: url(images/over2.png);	
+}
+.over3>div{
+	background: url(images/over3.png);
+}
+.over4>div{
+	background: url(images/over4.png);
+}
+.over5 >div{
+	background: url(images/over5.png);
+}
+.over6 >div{
+	background: url(images/over6.png);
+}
+.over7 >div{
+	background: url(images/over7.png);
+}
+h4{
+	color: red;
+	margin: 5px 0px 0px 10px; 
+}
+h5,h5 a{
+	color: black;
+	margin: 0px;
+	line-height: 31px;
+}
+h5{
+	margin: 0px 0px 0px 10px;
+}
+.over1 a:first-child{
+	margin-left: 15px;
+}
+h5 span{
+	margin: 0px 11px;
+}
+.index{
+	margin-left: 33px;
+}
+.move nav a:hover{
+	color: red;
+}
+.move nav a:hover h5{
+	color: red;
+}
+.mouse:hover{
+	background: rgba(0,0,0,.4);
+}
+.mouse:hover div{
+	display: block;
+}
+.move ul{
+	position: absolute;
+	bottom:36px;
+	right: 24px; 
+}
+.move ul li{
+	width:12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(255,255,255,.5);
+	float:left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.btn{
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	top: 190px;
+	background: rgba(0,0,0,0);
+	left: 245px;
+	color: white;
+	font-size: 30px;
+	line-height: 80px;
+	text-align: center;
+	cursor: pointer;
+}
+.btn:hover{
+	background: rgba(0,0,0,0.4);
+}
+.rightbtn{
+	left:1160px; 
+}
+.btn span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+}
+.leftbtn span{
+	transform: rotate(-135deg);
+	margin-left: 10px;
+}
+.rightbtn span{
+	transform: rotate(45deg);
+	margin-right: 10px;
+}
+/*实战推荐  免费好课*/
+.long{
+	width:1200px;
+	margin: 92px auto 0px;
+}
+.long .header{
+	width: 1200px;
+	height: 16px;
+	margin: 0px 0px 24px;
+	position: relative;
+}
+.header a{
+	position: absolute;
+	right: 0px;
+	color: black;
+	font-size: 14px;
+}
+.header a span{
+	border-color:black; 
+	margin: 4px;
+}
+.header a:hover{
+	color: gray;
+}
+.header a:hover span{
+	border-color: gray;
+}
+.div{
+	width: 224px;
+	height: 172px;
+	margin-right: 20px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0px 0px 7px lightgray;
+	transition:all 0.5s linear;
+}
+.bottom img{
+	width: 224px;
+	height: 124px;
+}
+.div p{
+	font-size: 14px;
+	color: black;
+	line-height: 20px;
+	margin-bottom: 0px;
+}
+.div span{
+	font-size: 11px;
+	color: gray;
+}
+.div div:nth-of-type(1){
+	width: 184px;
+	height: 144px;
+	padding:0px 20px; 
+	position: absolute;
+	top: 90px;
+	background: rgba(255,255,255,.9);
+	transition:all 0.3s linear;
+}
+.money{
+	width: 184px;
+	height: 48px;
+	padding:0px 20px;
+	top: 124px;
+	position: absolute;
+	background: white;
+	z-index: 20px;
+	line-height: 48px;
+	font-size: 13px;
+	color: red;
+}
+.money span{
+	float: right;
+}
+.div5{
+	margin-right: 0px;
+}
+.div:hover div:nth-of-type(1){
+	top: 28px;
+}
+.div:hover{
+	box-shadow: 0px 0px 20px gray;
+}
+.two{
+	margin-top: 234px;
+}
+.two .money span{
+	float: left;
+}
+/*阴影部分*/
+.boss{
+	margin-top:242px;
+	width: 100%;
+	height: 2752px;
+	background-color: #f3f5f7;
+	position: relative;
+}
+.boss>div{
+	width: 1200px;
+	padding-top: 48px;
+	height: 364px;
+	margin: 0px auto;
+	position: relative;
+}
+.boss .linux{
+	height: 172px;
+}
+.web1{
+	width: 224px;
+	height: 364px;
+	background: url(images/Web.png);
+}
+.java1{
+	width: 224px;
+	height: 364px;
+	background: url(images/Java.png);
+}
+
+.php1{
+	width: 224px;
+	height: 364px;
+	background: url(images/PHP.png);
+}
+
+.android1{
+	width: 224px;
+	height: 364px;
+	background: url(images/Android.png);
+}
+
+.ios1{
+	width: 224px;
+	height: 364px;
+	background: url(images/iOS.png);
+}
+
+.linux1{
+	width: 224px;
+	height: 172px;
+	background: url(images/Linux.png);
+}
+
+.shoujileft1{
+	width: 224px;
+	height: 364px;
+	background: url(images/shoujileft.png);
+}
+.boss h2{
+	font-size: 30px;
+	margin: 0px;
+	line-height: 33px;
+	color: white;
+	text-indent: 20px;
+}
+.boss h5:hover{
+	color: red;
+}
+.all{
+	float: left;
+}
+.all h2:first-child{
+	margin-top: 30px;
+}
+.all div{
+	text-indent: 20px;
+	margin-top: 40px;
+	color: white;
+	cursor: pointer;
+}
+.all div span{
+	margin: 0px;
+	width: 5px;
+	height: 5px;
+	border-top: 2px solid;
+	border-right: 2px solid;
+	margin-right: 125px;
+	margin-top: 5px;
+}
+.all div:hover span{
+	margin-right: 120px;
+}
+.all h5{
+	cursor: pointer;
+	text-indent: 10px;
+}
+.all h5:nth-of-type(1){
+	margin-top: 100px;
+}
+.ios1 h5:nth-of-type(1){
+	margin-top: 150px;
+}
+.all h4{
+	font-size: 15px;
+	color: white;
+	margin-top: 23px;
+	text-indent: 10px;
+}
+.shoujileft1 div{
+	width: 186px;
+	height: 35px;
+	border: 1px solid white;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 37px;
+	margin: 0px 0px 10px 20px;
+	text-indent: 0px;
+}
+.shoujileft1 div:nth-of-type(1){
+	margin-top: 110px;
+}
+/*web*/
+.wbg1{
+	width: 468px;
+	height: 172px;
+	background:url(images/web1.jpg); 
+	font-size: 20px;
+	line-height: 172px;
+	text-align: center;
+	color: white;
+	margin:0px 20px 20px 244px;
+	cursor: pointer;
+}
+.wbg2{
+	width: 468px;
+	height: 172px;
+	background:url(images/web2.jpg); 
+	font-size: 20px;
+	line-height: 172px;
+	text-align: center;
+	color: white;
+	margin:0px 20px 0px 244px;
+	cursor: pointer;
+}
+.wbg5{
+	width: 224px;
+	height: 364px;
+	position: absolute;
+	top: 48px;
+	left:976px;
+	background: white;
+	box-shadow: 0px 0px 7px lightgray; 
+	transition:all 0.5s linear;
+}
+.wbg5:hover{
+	box-shadow: 0px 0px 25px gray;
+}
+.wbg5 div{
+	box-shadow: none;
+}
+.web> a{
+	position: absolute;
+	left: 732px;
+	top: 48px;
+}
+.web a:nth-of-type(2){
+	top:240px;
+}
+.web a span{
+	float: left;
+}
+.hengxian{
+	width:184px;
+	height: 1px;
+	background-color: lightgray;
+	margin-left: 20px;
+	margin-top: 172px; 
+}
+ul{
+	list-style-type:square;
+	font-size: 12px;  
+}
+ul li{
+	margin: 20px 0px;
+	cursor: pointer;
+}
+ul li:hover{
+	color: red;
+}
+.jbg1{
+	width: 712px;
+	height: 172px;
+	font-size: 20px;
+	color: white;
+	line-height: 172px;
+	text-align: center;
+	background: url(images/java1.jpg);
+	margin-left:244px;
+	margin-bottom: 20px; 
+	cursor: pointer;
+}
+.javaa1>div{
+	margin-left: 20px;
+}
+.java a span{
+	float: left;
+}
+.pbg1{
+	float: left;
+	width: 468px;
+	height: 364px;
+	background: url(images/php1.jpg);
+	color: white;
+	text-align: center;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.pbg1 div:nth-of-type(1){
+	font-size: 20px;
+	margin-top: 125px;
+}
+.pbg1 div:nth-of-type(2){
+	width: 200px;
+	height: 1px;
+	background: white;
+	margin-top: 20px;
+	margin-left: 134px;
+}
+.pbg1 div:nth-of-type(3){
+	font-size: 14px;
+	margin-top: 20px;
+}
+.php> a{
+	position: absolute;
+	left: 732px;
+	top: 48px;
+}
+.php a:nth-of-type(2){
+	top:240px;
+}
+.php a span{
+	float: left;
+}
+.android a span{
+	float: left;
+}
+.ios> a{
+	position: absolute;
+	left: 732px;
+	top: 48px;
+}
+.ios a:nth-of-type(2){
+	top:240px;
+}
+.ios a span,.linux a span{
+	float: left;
+}
+.andbg1{
+	background: url(images/android1.jpg);
+}
+.ibg1{
+	background: url(images/ios1.jpg);
+}
+.ibg2{
+	background: url(images/ios2.jpg);
+}
+.linuxa1 >div{
+	margin-left: 20px;
+}
+.linuxa4 >div{
+	margin-right:0px;
+}
+.ltop,.lbottom{
+	width: 468px;
+	height: 172px;
+	float: left;
+	margin-left: 20px;
+	background-color: white;
+	cursor: pointer;
+	position: relative;
+}
+.ltop{
+	font-size: 20px;
+	line-height: 172px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: white;
+}
+.ltop1{
+	background-image: url(images/shoujileft1.jpg);
+}
+.ltop2{
+	background-image: url(images/shoujileft2.jpg);
+}
+.lbottom{
+	box-shadow: 0px 0px 7px lightgray;
+	position: relative;
+}
+.lbottom div{
+	font-size: 20px;
+	margin-top: 30px;
+	height: 30px;
+	line-height: 30px;
+}
+.lbottom span:nth-of-type(1){
+	margin-left: 35px;
+}
+.lbottom a span{
+	top: 30px;
+	position: absolute;
+	left:120px; 
+}
+.lbottom a{
+	font-size: 14px;
+	margin-bottom: 16px;
+	color: black;
+	margin: 0px;
+	left: 155px;
+	float: left;
+	margin-left: 155px;
+}
+.lbottom a p{
+	margin: 10px 0px; 
+} 
+.lbottom a:hover{
+	color: red;
+}
+.lbottom,.ltop,.wbg1,.wbg2,.jbg1,.pbg1{
+	transition: all 0.4s linear;
+}
+.lbottom:hover,.ltop:hover,.wbg1:hover,.wbg2:hover,.jbg1:hover,.pbg1:hover{
+	box-shadow: 0px 0px 25px gray;
+}
+/*底部*/
+footer{
+	width: 1200px;
+	height: 193px;
+	margin: 0px auto;
+	position: relative;
+}
+.smalllogo{
+	height: 33px;
+	width: 216px;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -108px;
+}
+.smalllogo>div{
+	float: left;
+	margin:0px 10px;
+	width: 33px;
+	height: 33px; 
+	background-image: url(images/idx-btm.png);
+	position: relative;
+	cursor: pointer;
+}
+.smalllogo div:nth-of-type(1){
+	background-position:0px -220px; 
+}
+.smalllogo div:nth-of-type(2){
+	background-position:-52px -220px; 
+}
+.smalllogo div:nth-of-type(3){
+	background-position:-104px -220px; 
+}
+.smalllogo div:nth-of-type(4){
+	background-position:-156px -220px; 
+}
+.smalllogo div:nth-of-type(2) .weixincode{
+	width: 160px;
+	height: 220px;
+	position: absolute;
+	left: 50%;
+	margin-left: -80px;
+	top: -220px;
+	background-image: url(images/idx-btm.png);
+	background-position:-7px 0px;
+	display: none;
+}
+.smalllogo div:nth-of-type(1):hover{
+	background-position:0px -261px; 
+}
+.smalllogo div:nth-of-type(2):hover{
+	background-position:-52px -261px; 
+}
+.smalllogo div:nth-of-type(2):hover div{
+	display: block;
+	background-position:-7px 0px;
+}
+.smalllogo div:nth-of-type(3):hover{
+	background-position:-104px -261px; 
+}
+.smalllogo div:nth-of-type(4):hover{
+	background-position:-156px -261px; 
+}
+.wenzi{
+	width: 1200px;
+	color: gray;
+	text-align: center;
+	height: 21px;
+	line-height: 21px;
+	position: relative;
+	top:88px; 
+}
+.wenzi a{
+	margin:0px 10px;
+	cursor: pointer;  
+}
+.wenzi a:hover{
+	color: red;
+}
+footer .hengxian{
+	width: 1200px;
+	height: 1px;
+	background-color: gray;
+	margin: 0px;
+	margin-top: 114px;
+}
+footer nav{
+	font-size: 12px;
+	width: 1200px;
+	height: 59px;
+	line-height: 59px;
+	text-align: center;
+	color: gray;
+}
+/*固定部位*/
+.fixed{
+	width: 56px;
+	height: 211px;
+	background-color: white;
+	position: fixed;
+	right: 0px;
+	bottom: 120px;
+	box-shadow: 0px 0px 5px lightgray;
+}
+.fixed1{
+	width: 16px;
+	height: 16px;
+	background: url(images/fixed1.png);
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.fixed1:hover{
+	background: url(images/fixed11.png);
+}
+.line{
+	width: 26px;
+	height: 1px;
+	background-color: lightgray;
+	margin: 20px 15px 15px ;
+}
+.fixed2{
+	width: 12px;
+	height: 18px;
+	background: url(images/fixed2.png);
+	margin-left: 22px;
+}
+.fixed2:hover{
+	background: url(images/fixed22.png);
+}
+.fixed2:hover div{
+	display: block;
+}
+.fixed2 div{
+	width: 160px;
+	height: 180px;
+	position: absolute;
+	background: url(images/fixed222.png);
+	bottom: 0px;
+	left: -161px;
+	box-shadow: 0px 0px 5px lightgray;
+	display: none;
+}
+.fixed3{
+	width: 18px;
+	height: 18px;
+	background: url(images/fixed3.png);
+	margin-left: 19px;
+}
+.fixed3:hover{
+	background: url(images/fixed33.png);
+}
+.fixed3:hover div{
+	display: block;
+}
+.fixed3 div{
+	width: 160px;
+	height: 200px;
+	position: absolute;
+	background: url(images/fixed333.png);
+	bottom: 0px;
+	left: -161px;
+	box-shadow: 0px 0px 5px lightgray;
+	display: none;
+}
+.fixed4{
+	width: 12px;
+	height: 8px;
+	background: url(images/fixed4.png);
+	margin-left: 22px;
+	margin-top: 20px;
+}
+.fixed4:hover{
+	background: url(images/fixed44.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

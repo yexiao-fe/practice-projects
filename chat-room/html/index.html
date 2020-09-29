@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>聊天室</title>
+	<link rel="stylesheet" href="../cssjs/index.css">
+</head>
+<body>
+	<!-- 登录界面 -->
+	<div class="login">
+		<div class="box">
+			<h2>欢迎来到<span>武侠</span>的世界</h2>
+			<div>
+				<h3>英雄请留步...</h3>
+				<h4>何事？</h4>
+				<h3>请留下你的大名...</h3>
+			</div>
+			<input type="text" placeholder="username" class="username" required>
+			<input type="button" value="进入" class="come" required>
+		</div>
+	</div>
+	<!-- 聊天室界面 -->
+	<div class="chat">
+		<div class="header">
+			<h2>欢迎来到仙侠聊天室！</h2>
+			<h2>当前在线人数:<span>0</span>人</h2>
+		</div>
+		<!-- 聊天框 -->
+		<div class="room">
+			<ul>
+				
+			</ul>
+		</div>
+		<form action="">
+			<textarea class="message" cols="30" rows="10" required></textarea>
+			<input type="button" class="button" value="发送" required>
+		</form>
+	</div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src='../cssjs/index.js'></script>
+</html>

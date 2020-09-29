@@ -1,0 +1,173 @@
+.box {
+  width: 1400px;
+  margin: 73px auto 0;
+  overflow: hidden; }
+  .box .wrap {
+    width: 591px;
+    height: 576px;
+    float: left;
+    position: relative; }
+    .box .wrap .small {
+      width: 591px;
+      height: 576px;
+      position: absolute; }
+      .box .wrap .small img {
+        display: none; }
+      .box .wrap .small .active {
+        display: block; }
+      .box .wrap .small .video {
+        display: none;
+        background: yellow;
+        height: 576px; }
+      .box .wrap .small .mask {
+        width: 200px;
+        height: 200px;
+        background: rgba(0, 0, 255, 0.3);
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: move;
+        display: none; }
+    .box .wrap .big {
+      width: 591px;
+      height: 576px;
+      position: absolute;
+      top: 0;
+      left: 733px;
+      overflow: hidden;
+      display: none; }
+      .box .wrap .big img {
+        position: absolute;
+        display: none; }
+      .box .wrap .big .active {
+        display: block; }
+  .box ul {
+    float: left;
+    margin-left: 20px; }
+    .box ul li {
+      width: 102px;
+      height: 102px;
+      margin-bottom: 18px;
+      overflow: hidden; }
+    .box ul .last {
+      margin-bottom: 0;
+      margin-top: -8px; }
+  .box .right {
+    float: right;
+    width: 470px;
+    text-align: center; }
+    .box .right h2 {
+      font-size: 50px; }
+      .box .right h2 a {
+        color: #444343; }
+    .box .right h3 {
+      font-size: 28px;
+      height: 28px;
+      margin-top: 14px;
+      margin-bottom: 21px; }
+      .box .right h3 a {
+        color: #444343; }
+    .box .right .underline {
+      text-decoration: underline;
+      color: #686767; }
+    .box .right h4 {
+      font-size: 20px;
+      height: 20px;
+      margin-top: 115px;
+      margin-bottom: 10px; }
+      .box .right h4 a {
+        color: #555555; }
+    .box .right .color {
+      margin: 0 auto;
+      width: 236px;
+      height: 48px;
+      border: 2px solid #c7c8c8;
+      padding: 14px; }
+      .box .right .color .frame {
+        border: 2px solid #666666;
+        padding: 2px;
+        width: 44px;
+        float: left; }
+        .box .right .color .frame div {
+          width: 44px;
+          height: 44px;
+          background: -webkit-linear-gradient(left top, #c7c7c7 50%, #020000 50.1%); }
+      .box .right .color .font {
+        float: left;
+        margin-left: 18px; }
+        .box .right .color .font span {
+          font-size: 16px;
+          line-height: 24px;
+          color: #666666; }
+    .box .right .shoppingBag {
+      width: 268px;
+      height: 80px;
+      background-color: #9d6f89;
+      text-align: center;
+      line-height: 80px;
+      font-size: 20px;
+      color: #e9e1e5;
+      margin: 33px auto 24px; }
+    .box .right h5 {
+      font-size: 16px;
+      height: 16px;
+      margin-top: 24px; }
+      .box .right h5 a {
+        color: #535353; }
+
+.English {
+  width: 1400px;
+  clear: both;
+  padding-top: 74px;
+  margin: 0 auto; }
+  .English .style {
+    width: 326px;
+    float: left;
+    margin-right: 105px; }
+  .English .size {
+    width: 370px;
+    float: left;
+    margin-right: 55px; }
+  .English .factory {
+    width: 400px;
+    float: left; }
+  .English .title {
+    color: #5f5880;
+    font-size: 16px;
+    line-height: 40px; }
+  .English ul li {
+    list-style-type: disc;
+    margin: 16px 0 16px 1em;
+    line-height: 29px; }
+  .English p {
+    color: #5f5880;
+    font-size: 15px;
+    line-height: 25px; }
+  .English span {
+    color: #d96c3b; }
+
+.center {
+  clear: both;
+  width: 1400px;
+  margin: 50px auto 40px;
+  border-top: 3px solid #efefef;
+  overflow: hidden; }
+  .center h3 {
+    font-size: 16px;
+    color: #5fa1dc;
+    height: 16px;
+    margin: 25px 0 20px;
+    text-align: center; }
+  .center ul li {
+    margin: 0 22px;
+    float: left;
+    width: 235px; }
+
+.price {
+  clear: both;
+  margin: 40px auto 60px;
+  width: 1354px;
+  height: 797px;
+  background: url(../images/price.jpg) no-repeat;
+  background-size: 1350px 100%;
+  overflow: hidden; }

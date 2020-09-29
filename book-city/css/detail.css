@@ -1,0 +1,67 @@
+.detail{
+	width: 1160px;
+	margin:0 auto; 
+	overflow: hidden;
+}
+.detail .left{
+	width:585px;
+	float: left; 
+}
+.detail .left img{
+	height: 670px;
+}
+.detail .right{
+	width:575px;
+	float: left; 
+}
+.detail .right h2{
+	font-size: 26px;
+	line-height:42px; 
+}
+.detail .right h5{
+	font-size: 15px;
+	line-height:22px; 
+	color:#646464;
+	padding:7px 0 20px;
+	border-bottom: 1px solid #eeeeee;
+}
+.detail .message{
+	height: 160px;
+	background: #eeeeee;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.detail .message p{
+	color:#646464;
+	margin:3px 0 17px;
+}
+.message .author,.message .pubhouse{
+	color:#337ab7;
+}
+.message .price span{
+	font-size: 22px;
+	color:red;
+}
+.detail .footer{
+	margin-top: 65px;
+	border-top:none;
+}
+.detail .footer div{
+	float: left;
+	width: 110px;
+	height: 36px;
+	border-radius: 5px;
+	line-height: 36px;
+	text-align: center;
+	border: 1px solid red;
+	cursor: pointer;
+}
+.detail .footer .add{
+	background: red;
+	color: #fff;
+}
+.detail .footer .buy{
+	background: #ffedee;
+	color:red;
+	margin-left: 213px; 
+}

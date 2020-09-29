@@ -1,0 +1,174 @@
+.box {
+  min-width: 1400px;
+  height: 540px;
+  margin: 0 auto 90px;
+  position: relative;
+  overflow: hidden; }
+  .box img {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    min-width: 1400px;
+    height: 540px;
+    transition: 1s linear; }
+  .box #active {
+    opacity: 1; }
+  .box ul {
+    position: absolute;
+    width: 120px;
+    left: 50%;
+    margin-left: -60px;
+    bottom: 21px; }
+    .box ul li {
+      float: left;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      margin: 0 17px;
+      cursor: pointer; }
+    .box ul #active {
+      background-color: red; }
+
+.backpack {
+  padding-left: 20px;
+  width: 1280px;
+  margin: 0 auto; }
+  .backpack h2 {
+    font-size: 24px;
+    color: #666666;
+    line-height: 118px;
+    text-align: center; }
+  .backpack ul {
+    overflow: hidden; }
+    .backpack ul li {
+      float: left;
+      margin-bottom: 77px;
+      margin-right: 15px;
+      width: 405px;
+      overflow: hidden; }
+      .backpack ul li div {
+        width: 405px;
+        height: 405px;
+        background: url(../images/backpack1.jpg);
+        overflow: hidden; }
+        .backpack ul li div div {
+          height: 94px;
+          font-size: 20px;
+          color: #535352;
+          line-height: 94px;
+          text-align: center;
+          background: rgba(255, 255, 255, 0.8);
+          margin-top: 405px;
+          transition: 0.5s all linear; }
+        .backpack ul li div .active {
+          height: 405px;
+          font-size: 32px;
+          color: #d6d6d6;
+          line-height: 405px;
+          background: rgba(0, 0, 0, 0.7);
+          margin-top: 0px; }
+      .backpack ul li div:hover .hover {
+        margin-top: 311px; }
+      .backpack ul li p {
+        line-height: 64px;
+        text-align: center; }
+        .backpack ul li p a {
+          font-size: 18px;
+          color: #6b6b6b; }
+
+.shoulderBag {
+  padding-left: 20px;
+  width: 1280px;
+  margin: 28px auto 0;
+  overflow: hidden; }
+  .shoulderBag h2 {
+    font-size: 24px;
+    color: #666666;
+    text-align: center; }
+  .shoulderBag ul {
+    margin-top: 50px;
+    overflow: hidden; }
+    .shoulderBag ul li {
+      float: left;
+      margin-bottom: 77px;
+      margin-right: 15px;
+      width: 405px;
+      overflow: hidden; }
+      .shoulderBag ul li div {
+        width: 405px;
+        height: 406px;
+        background: url(../images/shoulderBag1.jpg);
+        overflow: hidden; }
+        .shoulderBag ul li div div {
+          height: 406px;
+          font-size: 20px;
+          color: #535352;
+          line-height: 94px;
+          text-align: center;
+          background: rgba(255, 255, 255, 0.8);
+          margin-top: 406px;
+          transition: 0.5s all linear; }
+        .shoulderBag ul li div .active {
+          height: 406px;
+          font-size: 32px;
+          color: #d6d6d6;
+          line-height: 406px;
+          background: rgba(0, 0, 0, 0.7);
+          margin-top: 0px; }
+      .shoulderBag ul li div:hover .hover {
+        margin-top: 312px; }
+      .shoulderBag ul li p {
+        line-height: 64px;
+        text-align: center; }
+        .shoulderBag ul li p a {
+          font-size: 18px;
+          color: #6b6b6b; }
+
+.washPackage {
+  padding-left: 20px;
+  width: 1280px;
+  margin: 10px auto 76px;
+  overflow: hidden; }
+  .washPackage h2 {
+    font-size: 24px;
+    color: #666666;
+    text-align: center; }
+  .washPackage ul {
+    margin-top: 46px;
+    overflow: hidden; }
+    .washPackage ul li {
+      float: left;
+      margin-bottom: 77px;
+      margin-right: 15px;
+      width: 405px;
+      overflow: hidden; }
+      .washPackage ul li div {
+        width: 404px;
+        height: 406px;
+        background: url(../images/washPackage1.jpg);
+        overflow: hidden; }
+        .washPackage ul li div div {
+          height: 406px;
+          font-size: 20px;
+          color: #535352;
+          line-height: 94px;
+          text-align: center;
+          background: rgba(255, 255, 255, 0.8);
+          margin-top: 406px;
+          transition: 0.5s all linear; }
+        .washPackage ul li div .active {
+          height: 406px;
+          font-size: 32px;
+          color: #d6d6d6;
+          line-height: 406px;
+          background: rgba(0, 0, 0, 0.7);
+          margin-top: 0px; }
+      .washPackage ul li div:hover .hover {
+        margin-top: 312px; }
+      .washPackage ul li p {
+        line-height: 64px;
+        text-align: center; }
+        .washPackage ul li p a {
+          font-size: 18px;
+          color: #6b6b6b; }

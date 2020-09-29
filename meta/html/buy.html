@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>产品购买页</title>
+    <link rel="stylesheet" href="../css/buy.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+  </head>
+  <body>
+    <div class="header"><a href="#">加入会员，首单免邮</a>
+      <div class="right">
+        <div class="login"><a href="#" class="loginzhu">注册</a><span></span><a href="#" class="logindeng">登陆</a>
+          <div class="accountNumber">
+            <h4>Hi，王楠</h4>
+            <ul>
+              <li><a href="#">我的账号</a></li>
+              <li><a href="#">我的订单</a></li>
+              <li><a href="#">订单退换</a></li>
+              <li><a href="#">收货地址</a></li>
+              <li><a href="#">退出</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="shopping"><a href="#">购物袋</a></div>
+        <div class="shoppingson">你的购物袋是空的<br><a href="#">加入会员，首单免邮</a></div>
+      </div>
+      <div class="logo"></div>
+      <ul class="catalogue">
+        <li><a href="index.html">产品目录</a></li>
+        <li><a href="factoryStory.html">工厂故事</a></li>
+        <li><a href="buy.html">优惠策略</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+    </div>
+    <div class="register">
+      <div class="setup">
+        <h2>加入META会员计划</h2>
+        <p>市场上的产品，<br><span>一般都是8倍于其成本进行销售</span><br><span>但是，在META绝不是这样</span><br><span>我们将会坚持我们的极致透明策略，</span><br><span>去除一切中间商，减少供应链，提供</span><br><span>优质、低廉价格的设计师产品</span></p>
+        <label>邮箱</label>
+        <input type="text">
+        <div class="found">创建账户</div>
+        <div class="weibo">微博账号登陆</div>
+        <div class="qq">qq账户登陆</div>
+        <div class="black"><a href="#">已注册？登陆</a></div>
+        <div class="delete">x</div>
+      </div>
+      <div class="accomplish">
+        <h2>注册即将完成</h2>
+        <label>姓名</label>
+        <input type="text">
+        <label>密码</label>
+        <input type="text">
+        <label>手机号码</label>
+        <input type="text">
+        <div class="loading">登陆中</div>
+        <div class="delete">x</div>
+      </div>
+      <div class="returnh">
+        <p>-欢迎回来-</p>
+        <h2>M E T A</h2>
+        <div class="weibo">微博账号登陆</div>
+        <div class="qq">qq账户登陆</div>
+        <p>-or-</p>
+        <label>邮箱</label>
+        <input type="text">
+        <label>密码</label>
+        <input type="password">
+        <div class="returnLogin">登陆</div><a href="#">忘记密码？点击这里</a>
+        <div class="black"><a href="#">注册META</a></div>
+        <div class="delete">x</div>
+      </div>
+    </div>
+    <script>
+      //购物袋
+      var shopping=document.getElementsByClassName("shopping")[0];
+      var shoppingson=document.getElementsByClassName("shoppingson")[0];
+      shopping.onmouseover=function(){
+      	shopping.style.borderLeftColor="#f1f1f1";
+      	shopping.style.borderRightColor="#f1f1f1";
+      	shopping.style.borderBottomColor="#ffffff";
+      	shoppingson.style.display="block";
+      }
+      shopping.onmouseout=function(){
+      	shopping.style.borderLeftColor="";
+      	shopping.style.borderRightColor="";
+      	shopping.style.borderBottomColor="";
+      	shoppingson.style.display="";
+      }
+      shoppingson.onmouseover=function(){
+      	shopping.style.borderLeftColor="#f1f1f1";
+      	shopping.style.borderRightColor="#f1f1f1";
+      	shopping.style.borderBottomColor="#ffffff";
+      	shoppingson.style.display="block";
+      }
+      shoppingson.onmouseout=function(){
+      	shopping.style.borderLeftColor="";
+      	shopping.style.borderRightColor="";
+      	shopping.style.borderBottomColor="";
+      	shoppingson.style.display="";
+      }
+      //登录和注册
+      var loginzhu=document.getElementsByClassName("loginzhu")[0];
+      var logindeng=document.getElementsByClassName("logindeng")[0];
+      var accountNumber=document.getElementsByClassName("accountNumber")[0];
+      logindeng.onclick=function(){
+      	accountNumber.style.display="block";
+      }
+      logindeng.onmouseout=function(){
+      	accountNumber.style.display="";
+      }
+      accountNumber.onmouseover=function(){
+      	accountNumber.style.display="block";
+      }
+      accountNumber.onmouseout=function(){
+      	accountNumber.style.display="";
+      }
+      //注册 出现一个界面
+      var register=document.getElementsByClassName("register")[0];
+      var setup=document.getElementsByClassName("setup")[0];
+      var accomplish=document.getElementsByClassName("accomplish")[0];
+      var returnh=document.getElementsByClassName("returnh")[0];
+      var found=document.getElementsByClassName("found")[0];
+      var loading=document.getElementsByClassName("loading")[0];
+      var returnLogin=document.getElementsByClassName("returnLogin")[0];
+      var deletes=document.getElementsByClassName("delete");
+      var black=document.getElementsByClassName("black");
+      loginzhu.onclick=function(){
+      	register.style.display="block";
+      	black[0].onclick=function(){
+      		setup.style.display="none";
+      		returnh.style.display="block";
+      	}
+      }
+      found.onclick=function(){
+      	setup.style.display="none";
+      	accomplish.style.display="block";
+      }
+      loading.onclick=function(){
+      	accomplish.style.display="none";
+      	returnh.style.display="block";
+      }
+      returnLogin.onclick=function(){
+      	register.style.display="none";
+      	setup.style.display="block";
+      	returnh.style.display="none";
+      }
+      black[1].onclick=function(){
+      	setup.style.display="block";
+      	returnh.style.display="none";
+      }
+      for(var i=0;i<deletes.length;i++){
+      	deletes[i].onclick=function(){
+      		register.style.display="none";
+      		setup.style.display="block";
+      		returnh.style.display="none";
+      	}
+      }
+    </script>
+    <div class="box">
+      <div class="wrap">
+        <div class="small"><img src="../images/big.jpg" class="active"><img src="../images/big1.jpg"><img src="../images/big.jpg"><img src="../images/big1.jpg">
+          <div class="video">视频播放</div>
+          <div class="mask"></div>
+        </div>
+        <div class="big"><img src="../images/big.jpg" class="active"><img src="../images/big1.jpg"><img src="../images/big.jpg"><img src="../images/big1.jpg"></div>
+      </div>
+      <ul class="list">
+        <li><a href="#"><img src="../images/list1.jpg"></a></li>
+        <li><a href="#"><img src="../images/list2.jpg"></a></li>
+        <li><a href="#"><img src="../images/list3.jpg"></a></li>
+        <li><a href="#"><img src="../images/list4.jpg"></a></li>
+        <li class="last"><a href="#"><img src="../images/list5.jpg"></a></li>
+      </ul>
+      <div class="right">
+        <h2><a href="#">麦塔帆布双肩包</a></h2>
+        <h3><a href="#">￥349</a></h3><a href="#" class="underline"><i>传统零售店售价 ￥ 1200</i></a>
+        <h4><a href="#">颜色</a></h4>
+        <div class="color">
+          <div class="frame">
+            <div></div>
+          </div>
+          <div class="font"><span>斜纹牛仔布</span><br><span>黑色牛皮</span></div>
+        </div><a href="#">
+          <div class="shoppingBag">加入购物袋</div></a>
+        <h5><a href="#">免邮费</a></h5>
+      </div>
+    </div>
+    <div class="English">
+      <div class="style">
+        <div class="title">STYLE DETAILS</div>
+        <p>Our popular Snap Backpack now in a beautiful, sturdy twill fabrication</p>
+        <ul>
+          <li>100% cotton twill exterior</li>
+          <li>Leather detailing</li>
+          <li>100% cotton twill fused lining</li>
+          <li>Spot clean only</li>
+        </ul>
+      </div>
+      <div class="size">
+        <div class="title">SIZE DETAILS</div>
+        <ul>
+          <li>Padded interior laptop compartment fits 15'' Macbook</li>
+          <li>13'' L x 6'' W x 18'' H</li>
+          <li>Questions? Email<span> suporr@everlane.com.</span></li>
+        </ul>
+      </div>
+      <div class="factory">
+        <div class="title">THE FACTORY</div>
+        <p>Mr. Hong opened this factory in Dongguan, China over 30 years ago. Today he manufactures travel accessories for some of the largest brands in the world. We've visited this factory many times in the past few years and have built a strong relationship with Mr. Hong, whom we now consider both a friend and an adviser.<span> View more. </span></p>
+      </div>
+    </div>
+    <div class="center">
+      <h3>FROM THE PEOPLE</h3>
+      <ul>
+        <li><a href="#"><img src="../images/English1.jpg"></a></li>
+        <li><a href="#"><img src="../images/English2.jpg"></a></li>
+        <li><a href="#"><img src="../images/English3.jpg"></a></li>
+        <li><a href="#"><img src="../images/English4.jpg"></a></li>
+        <li class="last"><a href="#"><img src="../images/English5.jpg"></a></li>
+      </ul>
+    </div>
+    <div class="price"></div>
+    <div class="cosline"></div>
+    <div class="footer">
+      <ul>
+        <li class="first"><a href="#">帮助</a></li>
+        <li><a href="#">退换货</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">服务条款</a></li>
+        <li><a href="#">隐私声明</a></li>
+      </ul>
+      <ul>
+        <li class="first"><a href="#">公司介绍</a></li>
+        <li><a href="#">工厂故事</a></li>
+        <li><a href="#">关于我们</a></li>
+      </ul>
+      <ul>
+        <li class="first"><a href="#">社交网络</a></li>
+        <li><a href="#">微博</a></li>
+        <li><a href="#">微信</a></li>
+        <li><a href="#">博客</a></li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    window.onload=function(){
+    	var small=document.querySelector('.small')//定义变量为小图所在div
+    	var big=document.querySelector('.big')//定义变量为大图所在div
+    	var mask=document.querySelector('.mask')//定义蒙版
+    	var glass=document.querySelector('.wrap')//定义放大镜容器
+    	var bigimg=document.querySelectorAll('.big img')//大图
+    	var smallimg=document.querySelectorAll('.small img')//大图
+    	var list=document.querySelectorAll('.list li')
+    	var length=bigimg.length;
+    	for(var i=0;i<length;i++){
+    		list[i].index=i;
+    		list[i].onmouseover=function(){
+    			for(var i=0;i<length;i++){
+    				bigimg[i].className="";
+    				smallimg[i].className="";
+    			}
+    			bigimg[this.index].className="active";
+    			smallimg[this.index].className="active";
+    			//鼠标移入事件 移入时大图和蒙版显示出来
+    			small.onmouseover=function(){
+    				mask.style.display='block';
+    				big.style.display='block';
+    			}
+    			//鼠标移出事件 移出时大图和蒙版消失
+    			small.onmouseout=function(){
+    				mask.style.display='none';
+    				big.style.display='none';
+    			}
+    		}
+    	}
+    	list[list.length-1].onmouseover=function(){
+    		for(var i=0;i<length;i++){
+    				bigimg[i].className="";
+    				smallimg[i].className="";
+    			}
+    		document.getElementsByClassName("video")[0].style.display="block";
+    		small.onmouseover=function(){
+    			mask.style.display='';
+    			big.style.display='';
+    		}
+    	}
+    
+    	//鼠标移入事件 移入时大图和蒙版显示出来
+    	small.onmouseover=function(){
+    		mask.style.display='block';
+    		big.style.display='block';
+    	}
+    	//鼠标移出事件 移出时大图和蒙版消失
+    	small.onmouseout=function(){
+    		mask.style.display='none';
+    		big.style.display='none';
+    	}
+    	//鼠标移动事件
+    	small.onmousemove=function(event){
+    		var oEvent=event||window.event;//兼容各个浏览器
+    		var scrollTop=document.body.scrollTop;
+    
+    		var x=oEvent.clientX;//鼠标距离窗口左边的距离
+    		var y=oEvent.clientY;//鼠标距离窗口顶部的距离
+    		x=x-glass.offsetLeft-mask.offsetWidth/2;//此x为蒙版left的大小  若外边仍有容器包裹还需减掉xxx.offsetLeft
+    		y=y-glass.offsetTop-mask.offsetHeight/2+scrollTop;//此y为蒙版top的大小   若外边仍有容器包裹还需减掉xxx.offsetTop
+    		if (x<=0) {
+    			x=0;
+    		}else if (x>=glass.offsetWidth-mask.offsetWidth) {
+    			x=glass.offsetWidth-mask.offsetWidth;
+    		}
+    		if (y<=0) {
+    			y=0;
+    		}else if (y>=glass.offsetWidth-mask.offsetHeight) {
+    			y=glass.offsetWidth-mask.offsetHeight;
+    		}
+    		mask.style.left=x+'px';
+    		mask.style.top=y+'px';
+    
+    
+    		// 竖直方向放大倍数
+    		var l=small.offsetWidth/mask.offsetWidth;
+    		// 水平方向放大倍数
+    		var s=small.offsetHeight/mask.offsetHeight;
+    		for(var i=0;i<length;i++){
+    			bigimg[i].style.width=l*small.offsetWidth+"px";
+    			bigimg[i].style.height=s*small.offsetHeight+"px";
+    			bigimg[i].style.left=-l*x+'px';
+    			bigimg[i].style.top=-s*y+'px';
+    		}
+    	}
+    }
+  </script>
+</html>

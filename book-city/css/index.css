@@ -1,0 +1,262 @@
+body{
+	margin:0;
+	padding:0;
+}
+a{text-decoration: none;}
+ul,ol,li{
+	list-style: none;
+}
+ul,li,ol,p,input,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+/**********  头部样式   ***********/
+.header{
+	height: 50px;
+	border-bottom:1px solid #000;
+	background: #222222;
+}
+.header .nav{
+	width:1150px;
+	margin: 0 auto;
+}
+.nav ul{
+	height:50px; 
+}
+.nav ul li{
+	float: left;
+	padding:0 15px;
+	height: 50px;
+	line-height: 50px;
+}
+.nav ul .active{
+	background: #000;
+}
+.nav ul li a{
+	color:#fff;
+}
+/**********  头部样式   ***********/
+/*********  首页主要内容  **********/
+.main .top{
+	width:1150px;
+	overflow: hidden;
+	margin: 0 auto 40px;
+}
+.main .top .mybook{
+	width: 730px;
+	height: 720px;
+	float: left;
+	margin-top:20px;
+	padding:0 60px;
+	background: #eeeeee;
+}
+.main .mybook h2{
+	font-size: 58px;
+	margin-top: 70px;
+}
+.main .mybook p{
+	font-size:18px;
+	line-height: 58px;
+}
+.main .mybook img{
+	width: 730px;
+}
+.main .top .login{
+	float: right;
+	width: 230px;
+}
+.main .login h3{
+	font-size:46px;
+	margin:42px 0 26px;
+}
+#cancel:hover{
+	color:red;
+	cursor: pointer;
+}
+.main .login input{
+	display: block;
+	width: 216px;
+	margin-left:10px;
+	height: 32px;
+	outline: none;
+	margin-bottom: 14px;
+}
+.main .login button,.main .login a{
+	display: block;
+	width: 52px;
+	height: 32px;
+	border:1px solid #cccccc;
+	line-height: 32px;
+	text-align: center;
+	float: left;
+	border-radius: 5px;
+	color:#000;
+	font-size: 14px;
+}
+.main .login button{
+	padding:0;
+	background: #fff;
+	width: 54px;
+	height: 34px;
+	margin-left:40px;
+	margin-right: 24px;
+	outline: none;
+}
+/*图书列表*/
+.main .books{
+	width: 1150px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.books li{
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	padding:0 13px;
+	width: 234px;
+	height: 386px;
+	border-radius: 5px;
+	border:1px solid #cccccc;
+	text-align: center;
+	overflow: hidden;
+}
+.books li img{
+	height: 270px;
+}
+.books li h3{
+	font-size:26px;
+	margin-top: 20px;
+	width: 234px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap; 
+}
+.books li span{
+	display: block;
+	float: left;
+	height: 36px;
+	line-height:36px;
+	text-align: center;
+	margin-top: 13px;
+	font-weight: bold; 
+}
+.books li .book_buy{
+	float: right;
+	width: 80px;
+	height: 34px;
+	border:1px solid #4cae4c;
+	background: #5cb85c;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.books .page{
+	clear: both;
+	width: 870px;
+	margin-bottom: 40px;
+	text-align: center;
+	overflow: hidden;
+}
+.books .page span{
+	display: block;
+	width:34px; 
+	height:34px;
+	line-height:36px;
+	text-align: center;
+	border: 1px solid #dddddd;
+	float: left;
+	cursor: pointer;
+}
+.books .page .num{
+	color: #337ab7;
+	border-left-color:transparent;
+}
+.books .page .num:hover{
+	background: #337ab7;
+	color:#fff;
+}
+.books .page .left{
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	color:gray;
+}
+.books .page #page{
+	background: #337ab7;
+	color:#fff;
+}
+.books .page .left:hover{
+	color: #337ab7;
+}
+.books .page .right{
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-left-color: transparent;
+	color:gray;
+}
+.books .page .right:hover{
+	color: #337ab7;
+}
+/*图书列表*/
+/*********  首页主要内容  **********/
+/*******   注册页样式   *******/
+.register{
+	width: 1150px;
+	margin: 0 auto;
+	overflow: hidden;
+	min-height:600px; 
+}
+.register h2{
+	font-size:46px;
+	margin:42px 0 26px;
+}
+.register input{
+	display: block;
+	width: 216px;
+	margin-left:10px;
+	height: 32px;
+	outline: none;
+	margin-bottom: 14px;
+}
+.register button,.register a{
+	display: block;
+	width: 52px;
+	height: 32px;
+	border:1px solid #cccccc;
+	line-height: 32px;
+	text-align: center;
+	float: left;
+	border-radius: 5px;
+	color:#000;
+	font-size: 14px;
+}
+.register button{
+	padding:0;
+	background: #fff;
+	width: 54px;
+	height: 34px;
+	margin-left:40px;
+	margin-right: 24px;
+	outline: none;
+}
+/*******   注册页样式   *******/
+/*********  底部样式  *********/
+.footer{
+	border-top:1px solid #eeeeee;
+	height:74px;
+}
+.footer .top{
+	margin:20px 0 15px;
+	text-align:center; 
+}
+.footer .top a{
+	color:#4686bd;
+	margin-right:5px;
+	font-size: 12px; 
+}
+.footer p{
+	text-align: center;
+	color:#d3d3d3;
+	font-size:12px;
+	font-family:'Microsoft YaHei'; 
+}
+/*********  底部样式  *********/
