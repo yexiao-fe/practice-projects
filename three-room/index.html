@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三维可视化</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 3d机房 -->
+    <div class="td_room"></div>
+    <!-- 头部 -->
+    <div class="header">
+        <!-- left -->
+        <div class="name">
+            <p>三维可视化运维管理系统</p>
+            <span>版本 1.0.0 000</span>
+        </div>
+        <div class="type">
+            <!-- <div class="cyan">全局</div>
+            <div>机房</div>
+            <div>服务器</div> -->
+        </div>
+        <!-- right -->
+        <div class="right">
+            <div class="time">
+                <span>2018.01.11</span>
+                <span>12:36:52</span>
+            </div>
+        </div>
+    </div>
+    <!-- 左边部分 -->
+    <div class="left_side">
+        <ul>
+            <li class="cyan init">初始状态</li>
+            <li class="db">对比分析</li>
+            <li class="space">空间容量</li>
+            <!-- <li>告警</li> -->
+            <li class="line">连线</li>
+        </ul>
+    </div>
+    <!-- 右边部分 -->
+    <div class="right_side">
+        <ul>
+            <li class="floor1">楼层PA-1</li>
+            <li class="floor2">楼层PA-2</li>
+            <li class="floor3">楼层PA-3</li>
+        </ul>
+    </div>
+
+    <div class="control">
+        <!-- <ul>
+            <li>空间剩余</li>
+            <li>连线</li>
+        </ul> -->
+    </div>
+    <div class="xloading">
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</body>
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/three.min.js"></script>
+<script src="js/libs/OrbitControls.js"></script>
+<script src="js/libs/tween.min.js"></script>
+<script src="js/components/computerRoom.js"></script>
+<script src="js/components/textures.js"></script>
+<script src="js/components/serverText.js"></script>
+<script src="js/components/spaceCube.js"></script>
+<script src="js/common.js"></script>
+<script src="js/components/door.js"></script>
+<script src="js/components/hatchway.js"></script>
+<script src="js/components/server.js"></script>
+<script src="js/components/cabinet.js"></script>
+<script src="js/3d.js"></script>
+<script src="js/index.js"></script>
+</html>
